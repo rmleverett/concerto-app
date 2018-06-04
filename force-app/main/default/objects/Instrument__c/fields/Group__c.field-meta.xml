@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flute</fullName>
+                <default>false</default>
+                <label>Flute</label>
+            </value>
+            <value>
+                <fullName>Clarinet</fullName>
+                <default>false</default>
+                <label>Clarinet</label>
+            </value>
+            <value>
+                <fullName>Double Reed</fullName>
+                <default>false</default>
+                <label>Double Reed</label>
+            </value>
+            <value>
+                <fullName>Saxophone</fullName>
+                <default>false</default>
+                <label>Saxophone</label>
+            </value>
+            <value>
+                <fullName>Trumpet</fullName>
+                <default>false</default>
+                <label>Trumpet</label>
+            </value>
+            <value>
+                <fullName>French Horn/Baritone/Euphonium</fullName>
+                <default>false</default>
+                <label>French Horn/Baritone/Euphonium</label>
+            </value>
+            <value>
+                <fullName>Trombone</fullName>
+                <default>false</default>
+                <label>Trombone</label>
+            </value>
+            <value>
+                <fullName>Bass</fullName>
+                <default>false</default>
+                <label>Bass</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

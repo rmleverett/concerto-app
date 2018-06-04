@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Musical pieces</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Arranger__c</fullName>
+        <description>Name of Arranger</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Arranger</inlineHelpText>
+        <label>Arranger</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Composer__c</fullName>
+        <description>Name of composer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of composer</inlineHelpText>
+        <label>Composer</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Concert__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Concert when Music was performed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Concert when Music was performed</inlineHelpText>
+        <label>Concert</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Music</relationshipLabel>
+        <relationshipName>Music</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Music</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Music Title</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Music</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Arranger_Needs_Composer</fullName>
+        <active>true</active>
+        <description>Must have Composer if Arrange exists.</description>
+        <errorConditionFormula>ISBLANK( Composer__c ) &amp;&amp;
+NOT ISBLANK( Arranger__c )</errorConditionFormula>
+        <errorDisplayField>Composer__c</errorDisplayField>
+        <errorMessage>Whoops! You really need the Composer if you filled in the Arranger field. Or fire the Arranger, your choice.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
