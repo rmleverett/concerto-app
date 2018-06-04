@@ -1,4 +1,3 @@
 # concerto-app
-Concerto music ensemble manager for groups of all sizes.
-6/4/18 Initial load of README.
-6/4/18 Initial load of Concerto.
+Concerto music ensemble manager for groups of all sizes.<br/>
+You can deploy to your Salesforce instance by using <a href="https://githubsfdeploy.herokuapp.com/">this link.</a>
