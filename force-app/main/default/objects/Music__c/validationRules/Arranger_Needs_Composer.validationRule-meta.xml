@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arranger_Needs_Composer</fullName>
+    <active>true</active>
+    <description>Must have Composer if Arrange exists.</description>
+    <errorConditionFormula>ISBLANK( Composer__c ) &amp;&amp;
+NOT ISBLANK( Arranger__c )</errorConditionFormula>
+    <errorDisplayField>Composer__c</errorDisplayField>
+    <errorMessage>Whoops! You really need the Composer if you filled in the Arranger field. Or fire the Arranger, your choice.</errorMessage>
+</ValidationRule>

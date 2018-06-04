@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParticipantName__c</fullName>
+    <description>Lookup to Contact</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to Contact</inlineHelpText>
+    <label>Participant Name</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Participation</relationshipLabel>
+    <relationshipName>Participants</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

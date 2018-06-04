@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concert__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Concert when Music was performed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Concert when Music was performed</inlineHelpText>
+    <label>Concert</label>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Music</relationshipLabel>
+    <relationshipName>Music</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

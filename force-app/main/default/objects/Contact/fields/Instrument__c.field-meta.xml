@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instrument__c</fullName>
+    <externalId>false</externalId>
+    <label>Instrument</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Piccolo</fullName>
+                <default>false</default>
+                <label>Piccolo</label>
+            </value>
+            <value>
+                <fullName>Flute</fullName>
+                <default>false</default>
+                <label>Flute</label>
+            </value>
+            <value>
+                <fullName>Oboe</fullName>
+                <default>false</default>
+                <label>Oboe</label>
+            </value>
+            <value>
+                <fullName>Bassoon</fullName>
+                <default>false</default>
+                <label>Bassoon</label>
+            </value>
+            <value>
+                <fullName>Clarinet</fullName>
+                <default>false</default>
+                <label>Clarinet</label>
+            </value>
+            <value>
+                <fullName>Alto Clarinet</fullName>
+                <default>false</default>
+                <label>Alto Clarinet</label>
+            </value>
+            <value>
+                <fullName>Bass Clarinet</fullName>
+                <default>false</default>
+                <label>Bass Clarinet</label>
+            </value>
+            <value>
+                <fullName>Alto Saxophone</fullName>
+                <default>false</default>
+                <label>Alto Saxophone</label>
+            </value>
+            <value>
+                <fullName>Tenor Saxophone</fullName>
+                <default>false</default>
+                <label>Tenor Saxophone</label>
+            </value>
+            <value>
+                <fullName>Baritone Saxophone</fullName>
+                <default>false</default>
+                <label>Baritone Saxophone</label>
+            </value>
+            <value>
+                <fullName>Trumpet</fullName>
+                <default>false</default>
+                <label>Trumpet</label>
+            </value>
+            <value>
+                <fullName>French Horn</fullName>
+                <default>false</default>
+                <label>French Horn</label>
+            </value>
+            <value>
+                <fullName>Trombone</fullName>
+                <default>false</default>
+                <label>Trombone</label>
+            </value>
+            <value>
+                <fullName>Euphonium</fullName>
+                <default>false</default>
+                <label>Euphonium</label>
+            </value>
+            <value>
+                <fullName>Tuba</fullName>
+                <default>false</default>
+                <label>Tuba</label>
+            </value>
+            <value>
+                <fullName>String Bass</fullName>
+                <default>false</default>
+                <label>String Bass</label>
+            </value>
+            <value>
+                <fullName>Percussion</fullName>
+                <default>false</default>
+                <label>Percussion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
