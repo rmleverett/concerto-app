@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Concerto</fullName>
-    <description>Use Concerto to manage your music ensemble, large or small.</description>
+    <description>6/6/2018 Fixes</description>
     <types>
         <members>Concerto</members>
         <name>CustomApplication</name>
@@ -17,6 +17,7 @@
         <members>Music__c.Concert__c</members>
         <members>Participant__c.Concert__c</members>
         <members>Participant__c.Instrument__c</members>
+        <members>Participant__c.OtherInstrumentforConcert__c</members>
         <members>Participant__c.ParticipantName__c</members>
         <members>Rehearsal__c.Concert__c</members>
         <members>Rehearsal__c.Date__c</members>
@@ -56,6 +57,22 @@
         <members>Music__c.All</members>
         <members>Participant__c.All</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>Concerto_Admin</members>
+        <members>Concerto_User</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>LogACall</members>
+        <members>NewCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewLead</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>SendEmail</members>
+        <name>QuickAction</name>
     </types>
     <types>
         <members>Music__c.Arranger_Needs_Composer</members>

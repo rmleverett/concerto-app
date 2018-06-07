@@ -80,10 +80,10 @@
     <fields>
         <fullName>Concert__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <description>Concert when Music was performed</description>
+        <description>Latest Concert when Music was performed</description>
         <externalId>false</externalId>
-        <inlineHelpText>Concert when Music was performed</inlineHelpText>
-        <label>Concert</label>
+        <inlineHelpText>Latest Concert when Music was performed</inlineHelpText>
+        <label>Most Recent Concert</label>
         <referenceTo>Campaign</referenceTo>
         <relationshipLabel>Music</relationshipLabel>
         <relationshipName>Music</relationshipName>
