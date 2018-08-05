@@ -28,8 +28,12 @@
     <navType>Standard</navType>
     <tabs>standard-Campaign</tabs>
     <tabs>standard-Contact</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Opportunity</tabs>
     <tabs>Music__c</tabs>
     <tabs>Participant__c</tabs>
+    <tabs>Instrument__c</tabs>
+    <tabs>standard-Feed</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Concerto_UtilityBar</utilityBar>
 </CustomApplication>

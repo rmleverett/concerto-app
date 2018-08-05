@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Concerto</fullName>
-    <description>6/6/2018 Fixes</description>
+    <fullName>Concerto-App</fullName>
+    <description>Add custom object tab for Instrument, add Instrument, Account, and Chatter to Concerto app.</description>
     <types>
         <members>Concerto</members>
         <name>CustomApplication</name>
@@ -32,6 +32,7 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Instrument__c</members>
         <members>Music__c</members>
         <members>Participant__c</members>
         <name>CustomTab</name>
@@ -54,14 +55,10 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Instrument__c.All</members>
         <members>Music__c.All</members>
         <members>Participant__c.All</members>
         <name>ListView</name>
-    </types>
-    <types>
-        <members>Concerto_Admin</members>
-        <members>Concerto_User</members>
-        <name>PermissionSet</name>
     </types>
     <types>
         <members>LogACall</members>
