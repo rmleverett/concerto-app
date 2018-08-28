@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Concerto-App</fullName>
-    <description>Add custom object tab for Instrument, add Instrument, Account, and Chatter to Concerto app.</description>
+    <description>Add Music to nav bar, relabeled Participant Name to Participant Number, added url field to Music.</description>
     <types>
         <members>Concerto</members>
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Attendance__c.Participant__c</members>
+        <members>Attendance__c.Rehearsal__c</members>
         <members>Campaign.NumberofRehearsals__c</members>
         <members>Contact.Instrument__c</members>
-        <members>Instrument__c.Category__c</members>
-        <members>Instrument__c.Group__c</members>
-        <members>Instrument__c.Musician__c</members>
         <members>Music__c.Arranger__c</members>
         <members>Music__c.Composer__c</members>
         <members>Music__c.Concert__c</members>
+        <members>Music__c.RecordingLink__c</members>
         <members>Participant__c.Concert__c</members>
         <members>Participant__c.Instrument__c</members>
         <members>Participant__c.OtherInstrumentforConcert__c</members>
@@ -25,7 +25,7 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Instrument__c</members>
+        <members>Attendance__c</members>
         <members>Music__c</members>
         <members>Participant__c</members>
         <members>Rehearsal__c</members>
@@ -34,13 +34,13 @@
     <types>
         <members>Instrument__c</members>
         <members>Music__c</members>
-        <members>Participant__c</members>
         <name>CustomTab</name>
     </types>
     <types>
         <members>Campaign_Record_Page</members>
         <members>Concerto_UtilityBar</members>
         <members>Contact_Record_Page2</members>
+        <members>Rehearsal_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -48,7 +48,7 @@
         <name>Flow</name>
     </types>
     <types>
-        <members>Instrument__c-Instrument Layout</members>
+        <members>Attendance__c-Attendance Layout</members>
         <members>Music__c-Music Layout</members>
         <members>Participant__c-Participant Layout</members>
         <members>Rehearsal__c-Rehearsal Layout</members>
@@ -61,6 +61,7 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Campaign.Generate_Rehearsals</members>
         <members>LogACall</members>
         <members>NewCase</members>
         <members>NewContact</members>
@@ -75,5 +76,5 @@
         <members>Music__c.Arranger_Needs_Composer</members>
         <name>ValidationRule</name>
     </types>
-    <version>42.0</version>
+    <version>43.0</version>
 </Package>

@@ -98,7 +98,7 @@
         <description>Lookup to Contact</description>
         <externalId>false</externalId>
         <inlineHelpText>Lookup to Contact</inlineHelpText>
-        <label>Participant Name</label>
+        <label>Participant</label>
         <referenceTo>Contact</referenceTo>
         <relationshipLabel>Participation</relationshipLabel>
         <relationshipName>Participants</relationshipName>

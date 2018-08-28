@@ -1,5 +1,4 @@
-# concerto-app
-<h1>Concerto</h1>
+# concerto-app<h1>Concerto</h1>
 Music ensemble manager for groups of all sizes.
 <br/><br/>
 For Lightning Experience only. Not available for Classic.
@@ -15,4 +14,3 @@ To access Concerto, assign one of these permission sets:
 <li><i>Concerto Admin</i> or</li>
 <li><i>Concerto User</i></li>
 </ul>
-
