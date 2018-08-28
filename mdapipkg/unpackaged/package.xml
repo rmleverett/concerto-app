@@ -17,6 +17,7 @@
         <members>Music__c.RecordingLink__c</members>
         <members>Participant__c.Concert__c</members>
         <members>Participant__c.Instrument__c</members>
+        <members>Participant__c.OtherInstrumentforConcert__c</members>
         <members>Participant__c.ParticipantName__c</members>
         <members>Rehearsal__c.Concert__c</members>
         <members>Rehearsal__c.Date__c</members>
@@ -31,6 +32,7 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Instrument__c</members>
         <members>Music__c</members>
         <name>CustomTab</name>
     </types>
@@ -53,6 +55,7 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Instrument__c.All</members>
         <members>Music__c.All</members>
         <members>Participant__c.All</members>
         <name>ListView</name>

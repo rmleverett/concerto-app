@@ -80,6 +80,20 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OtherInstrumentforConcert__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>If playing a different instrument for this Concert</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If playing a different instrument for this Concert</inlineHelpText>
+        <label>Other Instrument for Concert</label>
+        <referenceTo>Instrument__c</referenceTo>
+        <relationshipLabel>Participants</relationshipLabel>
+        <relationshipName>Participants</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ParticipantName__c</fullName>
         <description>Lookup to Contact</description>
         <externalId>false</externalId>
