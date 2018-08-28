@@ -132,11 +132,11 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>parentFieldApiName</name>
-                <value>Campaign.Id</value>
+                <value>Campaign.ParentId</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>relatedListApiName</name>
-                <value>Music__r</value>
+                <value>Participants__r</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>relatedListComponentOverride</name>
@@ -158,7 +158,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>relatedListApiName</name>
-                <value>Participants__r</value>
+                <value>Music__r</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>relatedListComponentOverride</name>

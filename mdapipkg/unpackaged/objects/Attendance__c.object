@@ -43,74 +43,66 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Contributes in some way - musician, volunteer, etc.</description>
+    <description>Attendance records for Rehearsals</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Concert__c</fullName>
-        <description>Lookup to Concert</description>
+        <fullName>Participant__c</fullName>
+        <description>Contact attending the Rehearsal</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup to Concert</inlineHelpText>
-        <label>Concert</label>
-        <referenceTo>Campaign</referenceTo>
-        <relationshipLabel>Participants</relationshipLabel>
-        <relationshipName>Participants</relationshipName>
+        <inlineHelpText>Contact attending the Rehearsal</inlineHelpText>
+        <label>Participant</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Participant must play an Instrument.</errorMessage>
+            <filterItems>
+                <field>Contact.Instrument__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </filterItems>
+            <infoMessage>Only Contacts with Instruments may attend Rehearsals</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Attendance</relationshipLabel>
+        <relationshipName>Attendance</relationshipName>
         <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
     </fields>
     <fields>
-        <fullName>Instrument__c</fullName>
+        <fullName>Rehearsal__c</fullName>
+        <description>Attendance record is associated with this Rehearsal</description>
         <externalId>false</externalId>
-        <formula>TEXT(ParticipantName__r.Instrument__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Instrument</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>ParticipantName__c</fullName>
-        <description>Lookup to Contact</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Lookup to Contact</inlineHelpText>
-        <label>Participant</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Participation</relationshipLabel>
-        <relationshipName>Participants</relationshipName>
+        <inlineHelpText>Attendance record is associated with this Rehearsal</inlineHelpText>
+        <label>Rehearsal</label>
+        <referenceTo>Rehearsal__c</referenceTo>
+        <relationshipLabel>Attendance</relationshipLabel>
+        <relationshipName>Attendance</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
     </fields>
-    <label>Participant</label>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Concert__c</columns>
-        <columns>ParticipantName__c</columns>
-        <columns>Instrument__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
+    <label>Attendance</label>
     <nameField>
-        <displayFormat>P-{00000}</displayFormat>
-        <label>Participant Number</label>
+        <displayFormat>A-{0000000}</displayFormat>
+        <label>Attendance Number</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Participants</pluralLabel>
+    <pluralLabel>Attendance</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>

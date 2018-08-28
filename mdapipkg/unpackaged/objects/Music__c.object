@@ -40,7 +40,7 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <allowInChatterGroups>false</allowInChatterGroups>
+    <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Musical pieces</description>
@@ -80,16 +80,26 @@
     <fields>
         <fullName>Concert__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <description>Concert when Music was performed</description>
+        <description>Latest Concert when Music was performed</description>
         <externalId>false</externalId>
-        <inlineHelpText>Concert when Music was performed</inlineHelpText>
-        <label>Concert</label>
+        <inlineHelpText>Latest Concert when Music was performed</inlineHelpText>
+        <label>Most Recent Concert</label>
         <referenceTo>Campaign</referenceTo>
         <relationshipLabel>Music</relationshipLabel>
         <relationshipName>Music</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RecordingLink__c</fullName>
+        <description>Link to a recording of this musical piece.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to a recording of this musical piece.</inlineHelpText>
+        <label>Recording Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
     </fields>
     <label>Music</label>
     <listViews>
